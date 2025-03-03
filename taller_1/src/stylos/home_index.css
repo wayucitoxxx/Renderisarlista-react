@@ -1,0 +1,118 @@
+html{
+    height: 100vh;
+    width: 99vw;
+}
+.nav-item{
+    padding-right: 20px;
+}
+/* Estilos para centrar y alinear */
+.contenedor {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    gap: 11%; /* Espacio entre los contenedores */
+    padding: 20px;
+}
+
+.imagen-container img {
+    width: 150em;
+    max-width: 100%; /* Que la imagen nunca sobrepase su contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Opcional, bordes redondeados */
+}
+
+.mensaje-container p{
+    max-width: 70%; /* Define cuánto espacio ocupa */
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: justify;
+}
+
+/* Opcional: diseño responsivo */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* Pila los elementos en pantallas pequeñas */
+    }
+
+    .mensaje-container, .imagen-container {
+        max-width: 100%;
+    }
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+    justify-content: center; /* Alinea horizontalmente */
+    gap: 20px; /* Espacio entre los contenedores */
+    padding: 20px;
+}
+
+.imagen-container img {
+    max-width: 100%; /* Que la imagen nunca sobrepase su contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Opcional, bordes redondeados */
+}
+
+.mensaje-container {
+    max-width: 50%; /* Define cuánto espacio ocupa */
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: justify;
+}
+
+/* Estilos para el Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.contact-info, .social-media {
+    padding: 0 20px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin: 5px 0;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo: Poner el footer en columna en pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .social-media {
+        padding: 10px 0;
+    }
+}

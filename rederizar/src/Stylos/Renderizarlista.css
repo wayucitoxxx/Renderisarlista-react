@@ -1,0 +1,80 @@
+/* Contenedor principal */
+body {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    height: 100vh;
+    /* Asegura que el contenido ocupe toda la altura de la ventana */
+    margin: 0;
+    background-color: #f1f1f1;
+    /* Fondo suave */
+}
+
+/* Contenedor de la lista de usuarios con scroll si es necesario */
+.user-container {
+    list-style-type: none;
+    /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Asegura que los cuadros de usuarios estén uno debajo del otro */
+    gap: 15px;
+    /* Espacio entre los cuadros */
+    justify-content: flex-start;
+    align-items: center;
+    /* Centra los elementos de la lista */
+    max-height: 80vh;
+    /* Limita la altura del contenedor */
+    overflow-y: auto;
+    /* Agrega scroll si la lista es muy larga */
+    width: 100%;
+    padding-right: 20px;
+    /* Asegura que el scroll no se solape con el contenido */
+}
+
+/* Estilo del cuadro de cada usuario */
+.user-box {
+    display: flex;
+    flex-direction: column;
+    /* Los elementos dentro del cuadro estarán en columnas */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    /* Fondo blanco para los cuadros */
+    width: 300px;
+    /* Un ancho fijo para los cuadros */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar el cuadro */
+    text-align: left;
+    /* Asegura que el texto esté alineado a la izquierda */
+}
+
+/* Etiquetas de los datos (Email, Username, etc.) */
+.label {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Valores de los datos */
+.value {
+    margin-left: 10px;
+    color: #333;
+}
+
+/* Hacer que las etiquetas y los valores estén en columnas dentro del cuadro */
+.user-box span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    /* Espacio entre cada línea */
+}
+
+/* Asegurar que cada cuadro se vea uniforme */
+.user-box span:last-child {
+    margin-bottom: 0;
+    /* Quitar el margen del último elemento */
+}
